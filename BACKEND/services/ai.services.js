@@ -7,7 +7,7 @@ const getAIClient = () => {
   return new GoogleGenAI({ apiKey: process.env.GOOGLE_API_KEY });
 };
 
-const MODEL_NAME = 'gemini-3.5-flash';
+const MODEL_NAME = 'gemini-2.5-flash';
 
 async function generateStudyPlan({ subject, timeline, text }) {
   const ai = getAIClient();
