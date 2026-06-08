@@ -1,0 +1,14 @@
+{
+  "name": "studymind",
+  "version": "1.0.0",
+  "description": "AI-Powered Study App",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix BACKEND && npm install --prefix FRONTEND",
+    "dev:backend": "npm start --prefix BACKEND",
+    "dev:frontend": "npm run dev --prefix FRONTEND",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
